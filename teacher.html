@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090a">
+  <title>수업 공간 · 선생님</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap narrow">
+    <header class="top">
+      <a class="brand" href="./">수업 공간<small>선생님</small></a>
+      <div class="account" id="account"></div>
+    </header>
+    <!-- 로그인 → (처음이면) 가입 신청 → 승인 대기 → 교사용 화면 고르기.  teacher.js 가 채운다 -->
+    <main id="view" class="stack" style="padding: 40px 0 72px"></main>
+    <footer class="made">made by <b>경대쌤</b><br><a href="mailto:kyungdaelab@gmail.com">kyungdaelab@gmail.com</a></footer>
+  </div>
+
+  <script type="importmap">
+  { "imports": { "@supabase/supabase-js": "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/+esm" } }
+  </script>
+  <script type="module" src="teacher.js"></script>
+</body>
+</html>

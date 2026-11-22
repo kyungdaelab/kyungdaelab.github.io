@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090a">
+  <title>수업 공간 모음</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="./">수업 공간</a>
+      <!-- 로그인 상태: 학생 로그인 버튼 · 별명 · 로그아웃 (main.js 가 채운다) -->
+      <div class="account" id="account"></div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">수업 공간 모음</p>
+        <h1>수업에서 쓰는 공간을<br>한곳에 모았습니다</h1>
+        <p class="lead">들어갈 곳을 골라 주세요.</p>
+      </section>
+      <section class="grid" id="apps" aria-label="수업 공간 목록"></section>
+    </main>
+
+    <!-- 만든 사람: 가상미술관과 같은 표기를 흐리게 -->
+    <footer class="made">made by <b>경대쌤</b><br><a href="mailto:kyungdaelab@gmail.com">kyungdaelab@gmail.com</a></footer>
+  </div>
+
+  <script type="importmap">
+  { "imports": { "@supabase/supabase-js": "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/+esm" } }
+  </script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
