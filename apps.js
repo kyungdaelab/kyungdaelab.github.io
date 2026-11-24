@@ -21,6 +21,16 @@ const ART = {
     <path d="M92 40h56M92 52h40"/>
     <path d="M44 62a6 6 0 0 1 6-6h42l12 12h86a6 6 0 0 1 6 6v50a6 6 0 0 1-6 6H50a6 6 0 0 1-6-6z" fill="var(--art-fill)"/>
     <path d="M120 116V88m0 0l-11 11m11-11l11 11" stroke="var(--accent)" stroke-width="2.5"/>`),
+  move: line(`
+    <path d="M12 124h216"/>
+    <circle cx="112" cy="34" r="11" fill="var(--accent)" stroke="none"/>
+    <path d="M108 50l-10 32 16 14-6 26"/>
+    <path d="M98 82l-18 12-16-4"/>
+    <path d="M106 58l-20 6-8 16"/>
+    <path d="M107 58l18 10 16-8"/>
+    <rect x="164" y="52" width="26" height="72" rx="2"/>
+    <rect x="198" y="52" width="26" height="72" rx="2" stroke-dasharray="4 6"/>
+    <path d="M30 70h22M24 86h18M34 102h14"/>`),
   plus: line(`
     <circle cx="120" cy="75" r="40" stroke-dasharray="4 8"/>
     <path d="M120 60v30M105 75h30"/>`),
@@ -44,6 +54,14 @@ export const APPS = [
     needLogin: true,
     status: 'open',
     art: ART.files,
+  },
+  {
+    id: 'play',
+    title: '움직이는 교실',
+    desc: '카메라 앞에서 몸을 움직여 하는 수업 게임 공간이에요. 벽의 구멍 모양대로 포즈를 취하거나, 제자리 달리기로 퀴즈의 정답 문을 찾아 들어갑니다.',
+    path: 'play/',
+    status: 'open',
+    art: ART.move,
   },
   {
     id: 'next',
