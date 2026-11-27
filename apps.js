@@ -31,6 +31,15 @@ const ART = {
     <rect x="164" y="52" width="26" height="72" rx="2"/>
     <rect x="198" y="52" width="26" height="72" rx="2" stroke-dasharray="4 6"/>
     <path d="M30 70h22M24 86h18M34 102h14"/>`),
+  board: line(`
+    <path d="M40 92l80-34 80 34-80 34z" fill="var(--art-fill)"/>
+    <path d="M40 92v8l80 34 80-34v-8"/>
+    <path d="M120 126v8"/>
+    <circle cx="92" cy="88" r="7"/>
+    <circle cx="124" cy="78" r="11" fill="var(--accent)" stroke="none"/>
+    <circle cx="150" cy="98" r="5"/>
+    <path d="M98 86l16-5M133 85l13 10"/>
+    <path d="M196 40l8 10M206 34l4 12M186 46l10 8"/>`),
   plus: line(`
     <circle cx="120" cy="75" r="40" stroke-dasharray="4 8"/>
     <path d="M120 60v30M105 75h30"/>`),
@@ -62,6 +71,14 @@ export const APPS = [
     path: 'play/',
     status: 'open',
     art: ART.move,
+  },
+  {
+    id: 'waruru',
+    title: '와르르 아트',
+    desc: '기우는 판 위에 점을 놓아 선과 면을 만들고, 조형 원리를 먼저 완성하는 게임이에요. 판이 와르르 무너지지 않게 균형을 잡으세요. 혼자서 컴퓨터와 하거나 방을 만들어 친구와 함께 할 수 있어요.',
+    path: 'waruru/',
+    status: 'open',
+    art: ART.board,
   },
   {
     id: 'next',
